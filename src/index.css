@@ -41,10 +41,18 @@ All colors MUST be HSL.
     --hero-gradient: linear-gradient(135deg, hsl(214 84% 28%), hsl(214 84% 18%));
     --hero-gradient-light: linear-gradient(135deg, hsl(214 50% 92%), hsl(214 30% 96%));
     --service-gradient: linear-gradient(180deg, hsl(214 84% 28% / 0.05), hsl(214 84% 28% / 0.02));
+    --consulting-gradient: linear-gradient(135deg, hsl(214 84% 28%), hsl(214 84% 40%));
+    --contracting-gradient: linear-gradient(135deg, hsl(39 84% 56%), hsl(39 84% 70%));
+    --systems-gradient: linear-gradient(135deg, hsl(156 73% 40%), hsl(156 73% 55%));
+    --software-gradient: linear-gradient(135deg, hsl(271 91% 65%), hsl(271 91% 80%));
     
     --shadow-soft: 0 2px 8px hsl(214 84% 28% / 0.08);
     --shadow-medium: 0 4px 20px hsl(214 84% 28% / 0.12);
     --shadow-strong: 0 8px 32px hsl(214 84% 28% / 0.16);
+    --shadow-glow: 0 0 40px hsl(214 84% 28% / 0.1);
+    
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
@@ -115,5 +123,60 @@ All colors MUST be HSL.
   
   html {
     scroll-behavior: smooth;
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  .animate-slide-in {
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .group:hover .group-hover-scale {
+    transform: scale(1.05);
+  }
+  
+  .parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes slideIn {
+  from { 
+    opacity: 0; 
+    transform: translateX(-30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0; 
+    transform: translateY(30px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
   }
 }
