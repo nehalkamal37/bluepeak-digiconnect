@@ -84,9 +84,6 @@ const About = () => {
                 >
                   <Card className="text-center border-0 bg-gradient-to-br from-card/50 to-card/80 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-500 h-full">
                     <CardContent className="p-8">
-                      <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${value.bgGradient} mb-6 group-hover-scale transition-all duration-300`}>
-                        <IconComponent size={32} className={value.color} />
-                      </div>
                       <h4 className="text-xl font-bold mb-3 text-foreground">{value.title}</h4>
                       <p className="text-muted-foreground leading-relaxed">{value.description}</p>
                     </CardContent>

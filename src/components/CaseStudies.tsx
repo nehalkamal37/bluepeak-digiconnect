@@ -86,10 +86,7 @@ const CaseStudies = () => {
                 <Card className="border-0 bg-card/80 backdrop-blur-sm shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden h-full">
                   {/* Header with Gradient Background */}
                   <div className={`relative p-6 bg-gradient-to-br ${caseStudy.bgGradient} border-b border-border/20`}>
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className={`p-3 rounded-2xl ${caseStudy.color} bg-white shadow-lg group-hover-scale transition-all duration-300`}>
-                        <IconComponent size={28} />
-                      </div>
+                    <div className="mb-4">
                       <span className={`text-sm font-semibold ${caseStudy.color} bg-white/80 px-3 py-1 rounded-full`}>
                         {caseStudy.industry}
                       </span>

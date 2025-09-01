@@ -76,33 +76,27 @@ const Industries = () => {
                   </div>
                   
                   <div className="relative z-10">
-                    <div className="flex items-start space-x-6">
-                      <div className={`p-4 rounded-2xl ${industry.color} bg-white shadow-lg group-hover-scale transition-all duration-300`}>
-                        <IconComponent size={40} />
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
+                        {industry.title}
+                      </h3>
+                      <p className="text-muted-foreground mb-6 leading-relaxed">
+                        {industry.description}
+                      </p>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        {industry.features.map((feature, idx) => (
+                          <div key={idx} className="flex items-center space-x-3 text-sm">
+                            <CheckCircle size={16} className={`${industry.color} flex-shrink-0`} />
+                            <span className="text-muted-foreground">{feature}</span>
+                          </div>
+                        ))}
                       </div>
-                      <div className="flex-1">
-                        <h3 className="text-2xl font-bold mb-3 text-foreground group-hover:text-primary transition-colors">
-                          {industry.title}
-                        </h3>
-                        <p className="text-muted-foreground mb-6 leading-relaxed">
-                          {industry.description}
-                        </p>
-                        
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                          {industry.features.map((feature, idx) => (
-                            <div key={idx} className="flex items-center space-x-3 text-sm">
-                              <CheckCircle size={16} className={`${industry.color} flex-shrink-0`} />
-                              <span className="text-muted-foreground">{feature}</span>
-                            </div>
-                          ))}
-                        </div>
-                        
-                        <div className="mt-6 pt-4 border-t border-border/50">
-                          <button className={`inline-flex items-center space-x-2 ${industry.color} hover:opacity-80 font-medium transition-all`}>
-                            <span>View Case Studies</span>
-                            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                          </button>
-                        </div>
+                      
+                      <div className="mt-6 pt-4 border-t border-border/50">
+                        <button className={`inline-flex items-center space-x-2 ${industry.color} hover:opacity-80 font-medium transition-all`}>
+                          <span>View Case Studies</span>
+                          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                        </button>
                       </div>
                     </div>
                   </div>

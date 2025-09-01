@@ -95,20 +95,10 @@ const Services = () => {
                   </div>
                   
                   <CardHeader className="pb-6">
-                    <div className="flex items-center space-x-4 mb-6">
-                      <div className={`p-4 rounded-2xl ${service.color} bg-gradient-to-br ${
-                        service.gradient === 'consulting-gradient' ? 'from-blue-50 to-blue-100' : 
-                        service.gradient === 'contracting-gradient' ? 'from-amber-50 to-amber-100' :
-                        service.gradient === 'systems-gradient' ? 'from-emerald-50 to-emerald-100' :
-                        'from-purple-50 to-purple-100'
-                      } group-hover-scale transition-all duration-300`}>
-                        <IconComponent size={32} />
-                      </div>
-                      <div className="flex-1">
-                        <CardTitle className="text-2xl mb-2 text-foreground group-hover:text-primary transition-colors">
-                          {service.title}
-                        </CardTitle>
-                      </div>
+                    <div className="mb-6">
+                      <CardTitle className="text-2xl mb-2 text-foreground group-hover:text-primary transition-colors">
+                        {service.title}
+                      </CardTitle>
                     </div>
                     <CardDescription className="text-base leading-relaxed">
                       {service.description}
