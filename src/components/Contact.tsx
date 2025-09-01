@@ -102,9 +102,8 @@ const Contact = () => {
           <div className="space-y-8 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
             <Card className="border-0 bg-card/80 backdrop-blur-sm shadow-xl">
               <CardHeader>
-                <CardTitle className="text-2xl flex items-center space-x-3">
-                  <MapPin size={24} className="text-primary" />
-                  <span>Get in Touch</span>
+                <CardTitle className="text-2xl">
+                  Get in Touch
                 </CardTitle>
                 <CardDescription className="text-base">
                   Based in Memphis, Tennessee, serving clients nationwide and internationally
@@ -149,11 +148,8 @@ const Contact = () => {
                 <CardContent className="p-6 relative">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full blur-2xl"></div>
                   <div className="relative z-10">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-primary/20 rounded-2xl group-hover:bg-primary/30 transition-colors">
-                        <Rocket size={24} className="text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground">Ready to Start?</h3>
+                    <div className="mb-4">
+                      <h3 className="text-xl font-semibold text-foreground">Ready to Start?</h3>
                     </div>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
                       Schedule a consultation to discuss your project requirements and get a custom proposal tailored to your needs.
@@ -170,11 +166,8 @@ const Contact = () => {
                 <CardContent className="p-6 relative">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-accent/10 rounded-full blur-2xl"></div>
                   <div className="relative z-10">
-                    <div className="flex items-center space-x-4 mb-4">
-                      <div className="p-3 bg-accent/20 rounded-2xl group-hover:bg-accent/30 transition-colors">
-                        <FileText size={24} className="text-accent" />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground">Learn More</h3>
+                    <div className="mb-4">
+                      <h3 className="text-xl font-semibold text-foreground">Learn More</h3>
                     </div>
                     <p className="text-muted-foreground mb-6 leading-relaxed">
                       Download our comprehensive solutions brochure to learn more about our capabilities, case studies, and success stories.

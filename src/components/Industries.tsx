@@ -70,10 +70,6 @@ const Industries = () => {
                 style={{animationDelay: `${index * 0.15}s`}}
               >
                 <div className={`relative p-8 rounded-3xl border-2 ${industry.accentColor} bg-gradient-to-br ${industry.bgColor} hover:shadow-xl transition-all duration-500 overflow-hidden`}>
-                  {/* Background Pattern */}
-                  <div className="absolute top-0 right-0 w-40 h-40 opacity-5">
-                    <IconComponent size={160} className={industry.color} />
-                  </div>
                   
                   <div className="relative z-10">
                     <div className="flex-1">
