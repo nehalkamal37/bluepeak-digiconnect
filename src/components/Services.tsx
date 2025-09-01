@@ -24,7 +24,7 @@ const Services = () => {
         "Electrical & automation contracting",
         "MV/LV systems & BMS",
         "HVAC power & relay protection",
-        "Turnkey project delivery"
+        "Complete turnkey project delivery"
       ],
       icon: Zap,
       gradient: "contracting-gradient",

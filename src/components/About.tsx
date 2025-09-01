@@ -34,10 +34,10 @@ const About = () => {
   ];
 
   const benefits = [
-    "End-to-End Delivery – from strategy → build → support",
-    "Cross-Border Expertise – U.S. & international project delivery",
-    "Compliance-Ready – HIPAA, NEC, NFPA, ISO standards",
-    "Proven Impact – projects that reduce costs, boost efficiency, and improve reliability"
+    "End-to-End Delivery from strategy through build to support",
+    "Cross-Border Expertise with U.S. and international project delivery",
+    "Compliance-Ready for HIPAA, NEC, NFPA, and ISO standards",
+    "Proven Impact with projects that reduce costs, boost efficiency, and improve reliability"
   ];
 
   return (
